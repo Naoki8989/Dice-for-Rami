@@ -29,7 +29,7 @@ int faces, throws, dice;
         if (1 < throws &&  500 > throws) {
                 printf("throwing dice!\n");
             
-            for (size_t i = 0; i < throws; i++){
+            for (int i = 0; i < throws; i++){
                 dice = (rand() % faces) + 1;
                 printf("Dice = %d\n", dice);
                 count[dice]++;
